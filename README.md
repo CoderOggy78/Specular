@@ -1,6 +1,6 @@
 # AgentLens — Interceptor Proxy
 
-OpenAI-compatible proxy that logs every agentic session to JSONL for downstream eval.
+OpenAI-compatible proxy that logs every agentic session to JSONL for downstream eval. 
 
 ## Quick start
 
