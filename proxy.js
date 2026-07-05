@@ -201,9 +201,7 @@ app.use(async (req, res) => {
     });
   }
 });
-
 const server = createServer(app);
-
 server.listen(PROXY_PORT, () => {
   console.log(`\n  AgentLens interceptor running`);
   console.log(`  Proxy   : http://localhost:${PROXY_PORT}`);
