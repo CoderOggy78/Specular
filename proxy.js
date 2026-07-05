@@ -6,7 +6,6 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
 const TARGET_BASE  = process.env.AGENTLENS_TARGET  || "https://api.openai.com";
 const PROXY_PORT   = parseInt(process.env.AGENTLENS_PORT  || "4000", 10);
 const TRACE_DIR    = process.env.AGENTLENS_TRACE_DIR || path.join(__dirname, "traces");
