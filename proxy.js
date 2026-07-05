@@ -19,6 +19,7 @@ const traceStream = fs.createWriteStream(TRACE_FILE, { flags: "a" });
 
 function writeEvent(event) {
   traceStream.write(JSON.stringify(event) + "\n");
+ 
   if (VERBOSE) {
     const tag = `[${event.type}]`.padEnd(22);
     const info = event.model
